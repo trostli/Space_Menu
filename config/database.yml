@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: space_menus_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: space_menus_test
+  pool: 5
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: space_menus_production
+  pool: 5
+
