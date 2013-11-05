@@ -1,7 +1,9 @@
-<h1>Space Menu Creator</h1>
+<%= render 'menu' %>
 
-<h2>Current space-related menus: </h2>
+<h2>Menus</h2>
 <% @menus.each do |menu| %>
+<div class="menu-card">
   <%= menu.name %>
-  <%= render 'items/item',  menu: menu, item: menu.items.build, menu_items: menu.items %>
+  <%= render 'items/item',  menu: menu, item: menu.items.build, menu_items: menu.items.where(id: !nil) %>
+</div>
 <% end %>

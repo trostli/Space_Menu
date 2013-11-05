@@ -2,10 +2,10 @@ class MenusController < ApplicationController
 
   def index
     @menus = Menu.all
+    @menu = Menu.new
   end
 
   def new
-    @menu = Menu.new
   end
 
   def create

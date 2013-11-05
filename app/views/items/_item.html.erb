@@ -4,7 +4,7 @@
   <%= f.text_field :description, :placeholder => 'Description' %><br>
   <%= f.submit "Add Item" %>
 <% end %>
-
 <% menu_items.each do |item| %>
-<%= item.name %><br>
+<%= item.name %> - $<%= cents_to_dollars(item.price) %><br>
+<%= item.description %>
 <% end %>
