@@ -3,5 +3,5 @@
 <h2>Current space-related menus: </h2>
 <% @menus.each do |menu| %>
   <%= menu.name %>
-  <%= render 'items/item',  menu: menu, item: menu.items.build %>
+  <%= render 'items/item',  menu: menu, item: menu.items.build, menu_items: menu.items %>
 <% end %>

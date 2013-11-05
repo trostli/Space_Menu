@@ -15,7 +15,7 @@ describe Item do
       expect { item.save! }.to raise_error
     end
 
-    it "creates a new menu when name, price, and description is provided" do
+    it "creates a new item when name, price, and description is provided" do
       item.name = item_attributes[:name]
       item.price = item_attributes[:price]
       item.description = item_attributes[:description]

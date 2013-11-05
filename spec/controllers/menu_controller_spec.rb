@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe MenusController do
 
-  context "new meny form" do
+  context "new menu form" do
 
     it "should have a form to create a new menu" do
       get :new
