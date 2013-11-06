@@ -1,10 +1,14 @@
-<%= form_for [menu, item] do |f| %>
+<%= form_for [this_menu, this_item] do |f| %>
   <%= f.text_field :name, :placeholder => 'Item name' %><br>
   <%= f.text_field :price, :placeholder => 'Price' %><br>
   <%= f.text_field :description, :placeholder => 'Description' %><br>
   <%= f.submit "Add Item" %>
 <% end %>
+
 <% menu_items.each do |item| %>
-<%= item.name %> - $<%= cents_to_dollars(item.price) %><br>
-<%= item.description %>
+  <% puts item.price %>
+  <% puts "--------------------------" %>
+  <%= item.name %> - $<%= cents_to_dollars(item.price) %><br>
+  <%= item.description %><br>
 <% end %>
+

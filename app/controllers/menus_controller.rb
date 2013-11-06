@@ -1,8 +1,8 @@
 class MenusController < ApplicationController
 
   def index
-    @menus = Menu.all
     @menu = Menu.new
+    @menus = Menu.all
   end
 
   def new

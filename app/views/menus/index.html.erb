@@ -2,8 +2,10 @@
 
 <h2>Menus</h2>
 <% @menus.each do |menu| %>
-<div class="menu-card">
+  <div class="menu-card">
   <%= menu.name %>
-  <%= render 'items/item',  menu: menu, item: menu.items.build, menu_items: menu.items.where.not(id: nil) %>
-</div>
+  <%= render 'items/item',  this_menu: menu, this_item: menu.items.build, menu_items: menu.items.where("menu_id is not null") %>
+  </div>
 <% end %>
+
+<!-- menu_items: menu.items.where.not(id: nil) -->
