@@ -3,7 +3,32 @@ nav {
 }
 
 .menu-card {
-  border: 1px solid black;
+  border: 1px solid white;
   width: 300px;
+  background-color: #ddd;
+  box-shadow: 5px 5px 35px 5px #eee;
+}
 
+body {
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/f/f3/Hubble_Ultra_Deep_Field_part_d.jpg');
+}
+
+.container {
+
+}
+
+.menu-title {
+  color: white;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.item-name {
+  font-size: 120%;
 }

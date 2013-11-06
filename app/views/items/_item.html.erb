@@ -8,7 +8,7 @@
 <% menu_items.each do |item| %>
   <% puts item.price %>
   <% puts "--------------------------" %>
-  <%= item.name %> - $<%= cents_to_dollars(item.price) %><br>
-  <%= item.description %><br>
+  <span class='item-name'><%= item.name %></span> - $<span class='price'><%= cents_to_dollars(item.price) %></span><br>
+  <span class='description'><%= item.description %></span><br>
 <% end %>
 
